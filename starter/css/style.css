@@ -45,12 +45,14 @@ Dark green: #28b485
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
+            text-align: center;
         }
         
         .heading-primary {
             color: white;
             text-transform: uppercase;
             backface-visibility: hidden;
+            margin-bottom: 60px;
         }
         
         .heading-primary-main {
@@ -97,4 +99,29 @@ Dark green: #28b485
                 opacity: 1;
                 transform: translateX(0px);
             }
+        }
+        
+        .btn:link,
+        .btn:visited {
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 15px 40px;
+            border-radius: 100px;
+            transition: all .2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgb(0, 0, 0, 0.2)
+        }
+        
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2)
+        }
+        
+        .btn-white {
+            background-color: white;
+            color: #777;
         }
